@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUHOANG</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+</head>
+<style>     
+    [class*=col-]{
+        padding: 0px;
+        margin: 0px;
+    }
+</style>
+<body>
+    <div class="container">
+      <!--header-->
+        <div class="row">
+            <div class="col-3 mt-2">
+                <a href="home.html"><img src="../img/logo.svg" alt="" style="width:100%;height: 100% ;"></a>
+                
+                
+            </div>
+            <div class="col-5 mt-4">
+                <form class="d-flex" style="margin-left: 40px;">
+                    <input class="form-control me-2" type="search" placeholder="Bạn cần tìm...." aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                  </form>
+                
+            </div>
+            <div class="col-4" >
+                <form action="" class="d-flex  " style="margin-left: 40px;">
+                <a href="shopping.html" class="d-flex" style="text-decoration: none;">  
+                  <img width="711" height="450" src="../img/giohang.jpg" alt="" srcset="" style="width: 50px;height: 50px;margin-top: 20px;margin-left: 30px;">
+                <h5 style="color:rgb(55, 116, 229);margin-top: 30px;">Giỏ Hàng</h5>
+                </a>
+                
+                <a href="login.html" class="d-flex" style="text-decoration: none;">
+                  <img width="711" height="450" src="../img/taikhoan.jpg" alt="" srcset="" style="width: 50px;height: 50px;margin-top: 20px;margin-left: 30px;">
+                  <h5 style="color:rgb(55, 116, 229);margin-top: 30px;">Tài Khoản</h5>
+                </a>
+                </form>
+                
+            </div>
+        </div>
+        <!-- Horizontal Menu with Danh mục sản phẩm and other links in same row -->
+        <div class="row bg-primary text-white align-items-center py-4">
+            <!-- Sidebar Menu -->
+            <div class="col-3">
+                <h5 style="margin: 0 30px;" class="mb-0">DANH MỤC SẢN PHẨM</h5>
+            </div>
+        
+            <!-- Horizontal Navbar (Sản phẩm được quan tâm, etc.) -->
+            <div class="col-9">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="../html/product.html">Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../html/product1.html">Camera quan sát</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../html/product2.html">Thiết bị chống trộm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../html/product3.html">Khóa thông minh</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../html/infomation.html">Tin Công Nghệ</a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a class="nav-link text-white" href="../html/sitemap.html">Sitemap</a>
+                    </li>
+                </ul>   
+            </div>
+        </div>
+        <!--header-->
+    <div class="row">
+        <div class="col-2"></div>
+          <div class="col-6">
+  
+         
+         <table class="table">
+          <thead >
+            <tr>
+              <th style="color: brown;">Tên sản phẩm</th>
+              <th style="color: brown;">Số lượng</th>
+              <th style="color: brown;">Giá</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            
+          </tbody>
+          <tfoot>
+            <tr>
+              <td><a href="product.html" style="color: rgb(252, 252, 252); " class="btn btn-danger">Xem Món Khác</a></td>
+              <td></td>
+              <td class="text-end">
+                <!-- Button trigger modal -->
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Thanh Toán
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel" style="color: brown;">Vuhoangtelecom chân thành cảm ơn bạn!!!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" >
+                  
+                  <img width="400px" height="400px" src="../img/ship.jpg" alt="">
+                  <h5 style="color: brown;margin-right: 50px;margin-bottom: 40px;">Đợi xí nhân viên đang chuẩn bị hàng nhé<3</h5>
+                </div>
+                <div class="modal-footer">
+                  
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+              </td>
+            </tr>
+          </tfoot>
+         </table> 
+               
+        </div>
+      </div>
+
+        <div class="row">
+            <div class="col-3">
+                <form action="" class="d-flex">
+                    <img src="../img/iconLike.png" alt="">
+                    <h5 style="color: brown;margin-top: 15px;">Sale Khủng Đến 50%</h5>
+                </form>
+            </div>
+            <div class="col-3">
+                <form action="" class="d-flex">
+                    <img src="../img/iconGiaoHang.png" alt="">
+                    <h5 style="color: brown;margin-top: 15px;">Giao Hàng Nhanh </h5>
+                </form>
+            </div>
+            <div class="col-3">
+                <form action="" class="d-flex">
+                    <img src="../img/iconCSKH.png" alt="">
+                    <h5 style="color: brown;margin-top: 15px;">Hỗ Trợ 24/7</h5>
+                </form>
+            </div>
+            <div class="col-3">
+                <form action="" class="d-flex">
+                    <img src="../img/iconDoiTRa.png" alt="">
+                    <h5 style="color: brown;margin-top: 15px;">Bảo Hành 3 Tháng</h5>
+                </form>
+            </div>
+        </div>
+        <div class="container mt-5" style="background-color:rgb(55, 116, 229);">
+            <div class="row">
+                <div class="col-3" style="color: aliceblue;">
+                    <h5 style="text-align: center;margin-top: 20px;">HỖ TRỢ KHÁCH HÀNG</h5>
+                    <br>
+                    <ul>
+                        <li>Hướng dẫn mua hàng</li>
+                        <li>Hình thức thanh toán</li>
+                        <li>Chăm sóc khách hàng</li>
+                        <li>Tiêu chí bán hàng</li>
+                        <li>Đăng ký Đại lý</li>
+                    </ul>
+                </div>
+                <div class="col-3" style="color: aliceblue;">
+                    <h5 style="text-align: center;margin-top: 20px;">TỔNG ĐÀI HỖ TRỢ</h5>
+                    <br>
+                    <ul>
+                        <li>Mua hàng:
+                            <ul>
+                                <li>Tại HCM: (028) 35 166 166 (08:00 – 17:30)</li>
+                                <li>Tại HN: (024) 6256 1111 (08:00 – 17:30)</li>
+                                <li>Tại Nha Trang: 0915 810 810 (07:30 – 15:30)</li>
+                            </ul>
+                        </li>
+                        <li>Kỹ thuật & Bảo hành:
+                            <ul>
+                                <li>Tại HCM – Nha Trang: 1900 9259 – Bấm số 1</li>
+                                <li>Tại HN: 1900 9259 – Bấm số 2</li>
+                            </ul>
+                        </li>
+                        <li>Khiếu nại, CSKH: 0902 51 53 55 (24/7)</li>
+                    </ul>
+                </div>
+                <div class="col-3" style="color: aliceblue;">
+                    <h5 style="text-align: center;margin-top: 20px;">CHÍNH SÁCH VÀ QUY ĐỊNH</h5>
+                    <br>
+                    <ul>
+                        <li>Chính sách giao nhận</li>
+                        <li>Chính sách bảo hành</li>
+                        <li>Chính sách dùng thử sản phẩm</li>
+                        <li>Chính sách đổi trả sản phẩm</li>
+                        <li>Chính sách bảo mật thông tin</li>
+                        <li>Bảng giá dịch vụ lắp đặt, bảo trì</li>
+                    </ul>
+                </div>
+                <div class="col-3" style="color: aliceblue;">
+                    <h5 style="text-align: center;margin-top: 20px;">THÔNG TIN CÔNG TY</h5>
+                    <ul>
+                        <li>Giới thiệu Vuhoangtelecom</li>
+                        <li>Tin tức Vuhoangtelecom</li>
+                        <li>Tin tức công nghệ</li>
+                        <li>Tin tuyển dụng</li>
+                        <li>Liên hệ</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row bg-dark">
+                <p style="text-align: center;color: gray;">Hotline: 030 652 4177  <br>
+                Trụ sở chính: Số 3A Trần Quý Cáp, Phường 12, Quận Bình Thạnh, Thành phố Hồ Chí Minh</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="color: brown;">Vuhoangtelecom cảm ơn bạn!!!!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video width="400px" height="400px" autoplay style="margin-right: 30px;">
+                        <source src="../img/giaohang.mp4" type="video/mp4">
+                    </video>
+                    <h5 style="color: brown; margin-right: 50px; margin-bottom: 40px;">Đợi xí nhân viên đang chuẩn bị hàng nhé!!!</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        // Retrieve existing products or initialize an empty array
+        let products = JSON.parse(localStorage.getItem('products')) || [];
+
+        // Function to format the number as currency
+        function formatCurrency(amount) {
+            return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.') + '₫'; // Format with dots and add currency symbol
+        }
+
+        // Function to render the products in the table and calculate total price
+        function renderProducts() {
+            $('#myTable').empty(); // Clear the table before rendering
+            let totalAmount = 0; // Initialize total amount
+
+            products.forEach((product, index) => {
+                $('#myTable').append(
+                    `
+                    <tr>
+                        <td>${product.tensp}</td>
+                        <td>${product.quantity}</td>
+                        <td>${product.gia}</td> <!-- Keep the original price format without adding ₫ -->
+                        <td>
+                            <button class="btn btn-danger btn-sm delete-button" data-index="${index}">Xóa</button>
+                        </td>
+                    </tr>
+                    `
+                );
+
+                // Calculate the total amount
+                totalAmount += product.quantity * parseFloat(product.gia.replace(/\./g, '').replace('₫', '').trim() || 0); // Remove formatting and convert to number
+            });
+
+            // Display total amount formatted as currency
+            $('#totalAmountValue').text(formatCurrency(totalAmount)); // Format only the total amount
+        }
+
+        // Add the product to the products array
+        let tensp = localStorage.getItem('tensp');
+        let gia = localStorage.getItem('gia');
+        let quantity = 1; // Assuming quantity is 1 for now, can be adjusted as needed
+
+        if (tensp && gia) {
+            // Check if the product already exists
+            let existingProduct = products.find(p => p.tensp === tensp);
+            if (existingProduct) {
+                // If it exists, increase the quantity
+                existingProduct.quantity += 1;
+            } else {
+                // If it does not exist, add a new product object
+                products.push({ tensp: tensp, quantity: quantity, gia: gia }); // Keep original price
+            }
+            // Save the updated products array back to local storage
+            localStorage.setItem('products', JSON.stringify(products));
+        }
+
+        // Render the products in the table
+        renderProducts();
+
+        // Payment button click event
+        $('#paymentButton').click(function() {
+            // Handle payment logic here
+            // Optionally clear the products from localStorage after payment
+            localStorage.removeItem('products');
+            $('#myTable').empty(); // Clear the table
+            $('#totalAmountValue').text(`0₫`); // Reset total amount
+
+            // Show the modal
+            $('#exampleModal').modal('show');
+        });
+
+        // Delete button click event
+        $(document).on('click', '.delete-button', function() {
+            // Get the index of the product to delete
+            let index = $(this).data('index');
+
+            // Remove the product from the products array
+            products.splice(index, 1);
+
+            // Save the updated products array back to local storage
+            localStorage.setItem('products', JSON.stringify(products));
+
+            // Re-render the products in the table
+            renderProducts();
+        });
+    });
+</script>
+
+</body>
+</html>
